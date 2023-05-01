@@ -20,7 +20,7 @@ async def on_connect():
         messages.append(message)
 
     for message in messages:
-        with open('new_data.txt', 'a', encoding='utf-8') as data:
+        with open('data.txt', 'a', encoding='utf-8') as data:
             data.write(message.content + '\n')
     
 
